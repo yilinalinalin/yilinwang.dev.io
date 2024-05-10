@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Yilin's Dev Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    </style>
+
+    <body class="light-theme">
+        <nav>
+            <div class="site-title">
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <circle cx="20" cy="20" r="20" fill="blue">
+                </svg>
+                <h1>YILIN WANG</h1>
+            </div>
+            <p id="self-intro">I’m Yilin, a multidisciplinary designer and creative technologist at NYU. I love bringing my ideas to the world through creative coding.</p>
+
+            <div class="internal-link">
+                <div id="link" onclick="scrollToSection('projects')">
+                    <img id="link-image"
+                        src="icons/2x/projects.png" 
+                        alt="Projects Icon" 
+                        srcset="icons/1x/projects.png 1x, icons/2x/projects.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                        <h2 id="link-title">PROJECTS</h2>
+                        <p id="link-description">selection of my coding projects</p>
+                    </div>
+                </div>
+                <div id="link" onclick="scrollToSection('tools')">
+                    <img id="link-image"
+                        src="icons/2x/tools.png" 
+                        alt="Tools Icon" 
+                        srcset="icons/1x/tools.png 1x, icons/2x/tools.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                        <h2 id="link-title">TOOLS</h2>
+                        <p id="link-description">languages, tools, and frameworks</p>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="external-link-title">EXTERNAL LINK</h1>
+            <div class="external-link">
+                <div id="link" onclick="redirectToExternal('https://github.com/yilinalinalin')">
+                    <img id="link-image"
+                        src="icons/2x/github.png" 
+                        alt="Github Icon" 
+                        srcset="icons/1x/github.png 1x, icons/2x/github.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                        <h2 id="link-title">GITHUB</h2>
+                        <p id="link-description">github.com/yilinalinalin</p>
+                    </div>
+                </div>
+                <div id="link" onclick="redirectToExternal('www.yilinwanwangyilin.com')">
+                    <img id="link-image"
+                        src="icons/2x/design_portfolio.png" 
+                        alt="Design Portfolio Icon" 
+                        srcset="icons/1x/design_portfolio.png 1x, icons/2x/design_portfolio.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                        <h2 id="link-title">DESIGN PORTFOLIO</h2>
+                        <p id="link-description">www.yilinwanwangyilin.com</p>
+                    </div>
+                </div>
+                <div id="link" onclick="redirectToExternal('https://drive.google.com/file/d/1jtSNBuyJ2_jAKycXpjwINUGcVbaXrTXn/view?usp=drive_link')">
+                    <img id="link-image"
+                        src="icons/2x/resume.png" 
+                        alt="Resume Icon" 
+                        srcset="icons/1x/resume.png 1x, icons/2x/resume.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                        <h2 id="link-title">RESUME</h2>
+                        <p id="link-description">www.yilinwanwangyilin.com</p>
+                    </div>
+                </div>
+                <div id="link" onclick="redirectToExternal('mailto:yw6458@nyu.edu')">
+                    <img id="link-image"
+                        src="icons/2x/email.png" 
+                        alt="Email Icon" 
+                        srcset="icons/1x/email.png 1x, icons/2x/email.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                        <h2 id="link-title">EMAIL</h2>
+                        <p id="link-description">yw6458@nyu.edu</p>
+                    </div>
+                </div>
+                <div id="link" onclick="redirectToExternal('https://www.linkedin.com/in/yilin-wang-a68602222/')">
+                    <img id="link-image"
+                        src="icons/2x/linkedin.png" 
+                        alt="linkedin Icon" 
+                        srcset="icons/1x/linkedin.png 1x, icons/2x/linkedin.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                    <h2 id="link-title">LINKEDIN</h2>
+                    <p id="link-description">linkedin.com/in/yilin-wang-a68602222</p>
+                    </div>
+                </div>
+            </div>
+            <button id="theme">
+                <img id="icon-image" src="icons/Icons/dark-icon.png">
+                <p id="icon-text">DARK</p>
+            </button>
+            <script src="script.js"></script>
+        </nav>
+
+        <div id="projects" class="section">
+            <div id="projects">
+                <div class="project-large-title">
+                    <h1>PROJECTS</h1>
+                    <svg width="200" height="20" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <line x1="0" x2="120" y1="1" y2="1" stroke="#3827FF" stroke-width="1" stroke-linecap="butt"/>
+                    </svg>
+                </div>
+                <div  id="projects-content">
+                    <a href="dormant.html" id="project-card">
+                        <img id="project-image"
+                            src="cover/project-1.jpg" 
+                            alt="A white balloon in a steal frame." 
+                            srcset="cover/1x/project-1.jpg 1x, cover/project-1.jpg 2x">
+                        <div id="project-text">
+                            <h2 id="project-num">01</h2>
+                            <h1>Dormant Monster, 2024</h1>
+                            <p id="project-description">Advanced technology, for us, is like a dormant monster.</p>
+                            <div id="tag-container">
+                                <p id="tag">Installation</p>
+                                <p id="tag">C++</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="self.html" id="project-card">
+                        <img id="project-image"
+                            src="cover/project-2.jpg" 
+                            alt="A girl holding an installation." 
+                            srcset="cover/1x/project-2.jpg 1x, cover/project-2.jpg 2x">
+                        <div id="project-text">
+                            <h2 id="project-num">02</h2>
+                            <h1>Self-Recognition</h1>
+                            <p id="project-description">Present the need of multi-perspective in the current world.</p>
+                            <div id="tag-container">
+                                <p id="tag">Installation</p>
+                                <p id="tag">C++</p>
+                                <p id="tag">CAD</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href id="project-card">
+                        <img id="project-image"
+                            src="cover/002" 
+                            alt="Gradient Background" 
+                            srcset="cover/1x/002.jpg 1x, cover/002.jpg 2x">
+                        <div id="project-text">
+                            <h2 id="project-num">03</h2>
+                            <h1>Project Name</h1>
+                            <p id="project-description">Project Description</p>
+                            <div id="tag-container">
+                                <p id="tag">Tag</p>
+                                <p id="tag">Tag</p>
+                                <p id="tag">Tag</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href id="project-card">
+                        <img id="project-image"
+                            src="cover/002" 
+                            alt="Gradient Background" 
+                            srcset="cover/1x/002.jpg 1x, cover/002.jpg 2x">
+                        <div id="project-text">
+                            <h2 id="project-num">04</h2>
+                            <h1>Project Name</h1>
+                            <p id="project-description">Project Description</p>
+                            <div id="tag-container">
+                                <p id="tag">Tag</p>
+                                <p id="tag">Tag</p>
+                                <p id="tag">Tag</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href id="project-card">
+                        <img id="project-image"
+                            src="cover/002" 
+                            alt="Gradient Background" 
+                            srcset="cover/1x/002.jpg 1x, cover/002.jpg 2x">
+                        <div id="project-text">
+                            <h2 id="project-num">05</h2>
+                            <h1>Project Name</h1>
+                            <p id="project-description">Project Description</p>
+                            <div id="tag-container">
+                                <p id="tag">Tag</p>
+                                <p id="tag">Tag</p>
+                                <p id="tag">Tag</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href id="project-card">
+                        <img id="project-image"
+                            src="cover/002" 
+                            alt="Gradient Background" 
+                            srcset="cover/1x/002.jpg 1x, cover/002.jpg 2x">
+                        <div id="project-text">
+                            <h2 id="project-num">06</h2>
+                            <h1>Project Name</h1>
+                            <p id="project-description">Project Description</p>
+                            <div id="tag-container">
+                                <p id="tag">Tag</p>
+                                <p id="tag">Tag</p>
+                                <p id="tag">Tag</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="tools" class="section">
+            <div id="projects">
+                <div class="tools-large-title">
+                    <h1>TOOLS</h1>
+                    <svg width="200" height="20" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <line x1="0" x2="80" y1="1" y2="1" stroke="#3827FF" stroke-width="1" stroke-linecap="butt"/>
+                    </svg>
+                </div>
+                <div class="Languages">
+                    <h2 id="tool-title">LANGUAGES</h2>
+                    <div id="tool-tag-container">
+                        <p id="tool-tag">HTML</p>
+                        <p id="tool-tag">CSS</p>
+                        <p id="tool-tag">Javascript</p>
+                        <p id="tool-tag">Python</p>
+                        <p id="tool-tag">C++</p>
+                    </div>
+                </div>
+
+                <div class="frameworks">
+                    <h2 id="tool-title">FRAMEWORKS</h2>
+                    <div id="tool-tag-container">
+                        <p id="tool-tag">p5.js</p>
+                        <p id="tool-tag">Git</p>
+                        <p id="tool-tag">Three.js</p>
+                    </div>
+                </div>
+
+                <div class="Design-tools">
+                    <h2 id="tool-title">DESIGN TOOLS</h2>
+                    <div id="tool-tag-container">
+                        <p id="tool-tag">Figma</p>
+                        <p id="tool-tag">Adobe Illustrator</p>
+                        <p id="tool-tag">Adobe Photoshop</p>
+                        <p id="tool-tag">Adobe Premier Pro</p>
+                        <p id="tool-tag">Unity</p>
+                        <p id="tool-tag">Cinema 4D</p>
+                        <p id="tool-tag">Maya</p>
+                        <p id="tool-tag">Fusion 360</p>
+                        <p id="tool-tag">Zbrush</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <p id="footer-text">Design and develop with 🐇 by Yilin</p>
+            <p id="footer-text">Last updated: May 5 2024</p>
+        </div>
+    </body>

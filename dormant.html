@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Yilin's Dev Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    </style>
+
+    <body class="light-theme">
+        <nav>
+            <div class="site-title">
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <circle cx="20" cy="20" r="20" fill="blue">
+                </svg>
+                <h1>YILIN WANG</h1>
+            </div>
+            <p id="self-intro">I’m Yilin, a multidisciplinary designer and creative technologist at NYU. I love bringing my ideas to the world through creative coding.</p>
+
+            <div class="internal-link">
+                <a href="index.html" id="link">
+                    <img id="link-image"
+                        src="icons/2x/projects.png" 
+                        alt="Projects Icon" 
+                        srcset="icons/1x/projects.png 1x, icons/2x/projects.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                        <h2 id="link-title">PROJECTS</h2>
+                        <p id="link-description">selection of my coding projects</p>
+                    </div>
+                </a>
+                <div id="link" onclick="scrollToSection('tools')">
+                    <img id="link-image"
+                        src="icons/2x/tools.png" 
+                        alt="Tools Icon" 
+                        srcset="icons/1x/tools.png 1x, icons/2x/tools.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                        <h2 id="link-title">TOOLS</h2>
+                        <p id="link-description">languages, tools, and frameworks</p>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="external-link-title">EXTERNAL LINK</h1>
+            <div class="external-link">
+                <div id="link" onclick="redirectToExternal('https://github.com/yilinalinalin')">
+                    <img id="link-image"
+                        src="icons/2x/github.png" 
+                        alt="Github Icon" 
+                        srcset="icons/1x/github.png 1x, icons/2x/github.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                        <h2 id="link-title">GITHUB</h2>
+                        <p id="link-description">github.com/yilinalinalin</p>
+                    </div>
+                </div>
+                <div id="link" onclick="redirectToExternal('www.yilinwanwangyilin.com')">
+                    <img id="link-image"
+                        src="icons/2x/design_portfolio.png" 
+                        alt="Design Portfolio Icon" 
+                        srcset="icons/1x/design_portfolio.png 1x, icons/2x/design_portfolio.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                        <h2 id="link-title">DESIGN PORTFOLIO</h2>
+                        <p id="link-description">www.yilinwanwangyilin.com</p>
+                    </div>
+                </div>
+                <div id="link" onclick="redirectToExternal('https://drive.google.com/file/d/1jtSNBuyJ2_jAKycXpjwINUGcVbaXrTXn/view?usp=drive_link')">
+                    <img id="link-image"
+                        src="icons/2x/resume.png" 
+                        alt="Resume Icon" 
+                        srcset="icons/1x/resume.png 1x, icons/2x/resume.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                        <h2 id="link-title">RESUME</h2>
+                        <p id="link-description">www.yilinwanwangyilin.com</p>
+                    </div>
+                </div>
+                <div id="link" onclick="redirectToExternal('mailto:yw6458@nyu.edu')">
+                    <img id="link-image"
+                        src="icons/2x/email.png" 
+                        alt="Email Icon" 
+                        srcset="icons/1x/email.png 1x, icons/2x/email.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                        <h2 id="link-title">EMAIL</h2>
+                        <p id="link-description">yw6458@nyu.edu</p>
+                    </div>
+                </div>
+                <div id="link" onclick="redirectToExternal('https://www.linkedin.com/in/yilin-wang-a68602222/')">
+                    <img id="link-image"
+                        src="icons/2x/linkedin.png" 
+                        alt="linkedin Icon" 
+                        srcset="icons/1x/linkedin.png 1x, icons/2x/linkedin.png 2x"
+                        sizes="(max-width: 600px) 100px, 200px">
+                    <div id="link-text">
+                    <h2 id="link-title">LINKEDIN</h2>
+                    <p id="link-description">linkedin.com/in/yilin-wang-a68602222</p>
+                    </div>
+                </div>
+            </div>
+            <button id="theme">
+                <img id="icon-image" src="icons/Icons/dark-icon.png">
+                <p id="icon-text">DARK</p>
+            </button>
+            <script src="script.js"></script>
+        </nav>
+
+        <div  id="individual-projects">
+            <div id="individual-project-heading">
+                <h1>Dormant Monster</h1>
+                <p id="project-description">Art Installation, 2024</p>
+            </div>
+            <img id="individual-project-cover"
+                src="cover/project-1.jpg" 
+                alt="A white balloon in a steel frame." 
+                srcset="cover/1x/project-1.jpg 1x, cover/project-1.jpg 2x">
+            <div id="individual-project-desc">
+                <div id="desc">
+                    <p id="individual-project-text">"Dormant Monster," is a piece by Yilin that invites audiences to confront uncertainty. At first glance, it's just a balloon slowly growing. Above it hangs a menacing spike. As you stand witness to the piece, a feeling of unease washes over you. The balloon's gradual expansion represents the unstoppable march of technology, while the spike serves as a dark reminder of the dangerous path this advancement may lead us down: the concern lies in the uncertainty of the dormant monster's awakening. Without vigilance, the balloon will continue to expand until it inevitably collides with the spike, resulting in its end. This emphasizes the importance of maintaining awareness and understanding the risks associated with unchecked technological growth. It is crucial for us to recognize this responsibility to inadvertently avoid provoking consequences beyond our control.
+                    </p>
+                </div>
+            </div>
+            <div id="individual-project-content">
+                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/du6xS2n83hg?si=y4qH6aHuDG06IOYi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="individual-project-desc">
+                <p id="individual-project-text">Process</p>
+                <img id="individual-project-cover"
+                src="cover/process.jpg" 
+                alt="Process of the project" 
+                srcset="cover/1x/process.jpg 1x, cover/process.jpg 2x">
+            </div>
+        </div>
+
+        <div id="footer">
+            <p id="footer-text">Design and develop with 🐇 by Yilin</p>
+            <p id="footer-text">Last updated: May 5 2024</p>
+        </div>
+
+    </body>
+</html>
